@@ -14,7 +14,7 @@ test('completar formulario de login e ingresar', async ({ page }) => {
   await page.locator('#tuclave').fill('mi_clave_123');
 
   // Completar campo Email con id "tumail"
-  await page.locator('#tumail').fill('usuario@example.com');
+  await page.locator('#tumail').fill('usuarioexample.com');
 
   // Esperar 5 segundos antes de hacer click
   await page.waitForTimeout(5000);
@@ -35,3 +35,4 @@ test('completar formulario de login e ingresar', async ({ page }) => {
   // Esperar a que se procese la acción y vuelva a la página inicial
   await page.waitForLoadState('networkidle');
 });
+
